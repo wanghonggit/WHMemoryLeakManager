@@ -32,6 +32,7 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'WHMemoryLeakManager/Classes/**/*'
   
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 arm64' }
   # s.resource_bundles = {
   #   'WHMemoryLeakManager' => ['WHMemoryLeakManager/Assets/*.png']
   # }

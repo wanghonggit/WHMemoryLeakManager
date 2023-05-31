@@ -117,7 +117,7 @@
 		145C9EA88C47232C20F7ED1AC22EAE7B /* Pods-WHMemoryLeakManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WHMemoryLeakManager_Example-umbrella.h"; sourceTree = "<group>"; };
 		16AE42BE555F2B1C6DEE108AAC985386 /* UIPageViewController+MemoryLeak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIPageViewController+MemoryLeak.m"; sourceTree = "<group>"; };
 		1DADADA2974CCE7125716512AEC960F0 /* FBObjectInStructReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBObjectInStructReference.m; sourceTree = "<group>"; };
-		1F8A49FE5870A094A2300CA0B03010C4 /* Pods-WHMemoryLeakManager_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WHMemoryLeakManager_Example"; path = Pods_WHMemoryLeakManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8A49FE5870A094A2300CA0B03010C4 /* Pods_WHMemoryLeakManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WHMemoryLeakManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD30072F877DFEDC66A0023745DFA86 /* FBBlockStrongLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FBBlockStrongLayout.m; sourceTree = "<group>"; };
 		21B67E5706BD118A36E0404466161E21 /* Pods-WHMemoryLeakManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WHMemoryLeakManager_Tests-umbrella.h"; sourceTree = "<group>"; };
 		222756958E85C87DF9FEEF5E969974EE /* FBRetainCycleDetector.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = FBRetainCycleDetector.mm; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		7CED15D1B7BD80868340A9E831C5B338 /* WHMemoryLeakManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WHMemoryLeakManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8142D95E4DBBAE02E9C0F545AA7AD4EB /* UITabBarController+MemoryLeak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+MemoryLeak.h"; sourceTree = "<group>"; };
 		84262A71AAC051AC022CB1A88F9E345E /* FBBlockStrongRelationDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBBlockStrongRelationDetector.h; sourceTree = "<group>"; };
-		85269E7B9A84DBAD35A8CB763729CACD /* Pods-WHMemoryLeakManager_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WHMemoryLeakManager_Tests"; path = Pods_WHMemoryLeakManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85269E7B9A84DBAD35A8CB763729CACD /* Pods_WHMemoryLeakManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WHMemoryLeakManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E7A72C33B4D4E3BE43D2841DD2C5B0 /* MLeaksFinder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLeaksFinder.h; sourceTree = "<group>"; };
 		87E53CD2D6441C154A488F4A5316FF97 /* FBAssociationManager+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBAssociationManager+Internal.h"; sourceTree = "<group>"; };
 		8D5F10740DC8F61E3D971A8ADADC8F0A /* WHMemoryLeakManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WHMemoryLeakManager-dummy.m"; sourceTree = "<group>"; };
@@ -489,8 +489,8 @@
 		D407573D46958DEE6153F127D9B9BBAB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F8A49FE5870A094A2300CA0B03010C4 /* Pods-WHMemoryLeakManager_Example */,
-				85269E7B9A84DBAD35A8CB763729CACD /* Pods-WHMemoryLeakManager_Tests */,
+				1F8A49FE5870A094A2300CA0B03010C4 /* Pods_WHMemoryLeakManager_Example.framework */,
+				85269E7B9A84DBAD35A8CB763729CACD /* Pods_WHMemoryLeakManager_Tests.framework */,
 				7CED15D1B7BD80868340A9E831C5B338 /* WHMemoryLeakManager.framework */,
 			);
 			name = Products;
@@ -631,7 +631,7 @@
 			);
 			name = "Pods-WHMemoryLeakManager_Example";
 			productName = Pods_WHMemoryLeakManager_Example;
-			productReference = 1F8A49FE5870A094A2300CA0B03010C4 /* Pods-WHMemoryLeakManager_Example */;
+			productReference = 1F8A49FE5870A094A2300CA0B03010C4 /* Pods_WHMemoryLeakManager_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7DC923439871B6F5625C536836E7CD7A /* Pods-WHMemoryLeakManager_Tests */ = {
@@ -650,7 +650,7 @@
 			);
 			name = "Pods-WHMemoryLeakManager_Tests";
 			productName = Pods_WHMemoryLeakManager_Tests;
-			productReference = 85269E7B9A84DBAD35A8CB763729CACD /* Pods-WHMemoryLeakManager_Tests */;
+			productReference = 85269E7B9A84DBAD35A8CB763729CACD /* Pods_WHMemoryLeakManager_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		84744EB3C6FE7F4AC7E569CD56AB4224 /* WHMemoryLeakManager */ = {
@@ -813,7 +813,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-WHMemoryLeakManager_Tests/Pods-WHMemoryLeakManager_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-WHMemoryLeakManager_Tests/Pods-WHMemoryLeakManager_Tests.modulemap";
@@ -847,7 +847,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-WHMemoryLeakManager_Example/Pods-WHMemoryLeakManager_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-WHMemoryLeakManager_Example/Pods-WHMemoryLeakManager_Example.modulemap";
@@ -880,7 +880,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/WHMemoryLeakManager/WHMemoryLeakManager-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/WHMemoryLeakManager/WHMemoryLeakManager-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WHMemoryLeakManager/WHMemoryLeakManager.modulemap";
 				PRODUCT_MODULE_NAME = WHMemoryLeakManager;
@@ -911,7 +911,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-WHMemoryLeakManager_Tests/Pods-WHMemoryLeakManager_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-WHMemoryLeakManager_Tests/Pods-WHMemoryLeakManager_Tests.modulemap";
@@ -1005,7 +1005,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-WHMemoryLeakManager_Example/Pods-WHMemoryLeakManager_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-WHMemoryLeakManager_Example/Pods-WHMemoryLeakManager_Example.modulemap";
@@ -1105,7 +1105,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/WHMemoryLeakManager/WHMemoryLeakManager-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/WHMemoryLeakManager/WHMemoryLeakManager-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WHMemoryLeakManager/WHMemoryLeakManager.modulemap";
 				PRODUCT_MODULE_NAME = WHMemoryLeakManager;
