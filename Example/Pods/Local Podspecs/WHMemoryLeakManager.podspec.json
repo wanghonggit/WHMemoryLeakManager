@@ -1,0 +1,22 @@
+{
+  "name": "WHMemoryLeakManager",
+  "version": "0.1.0",
+  "summary": "A short description of WHMemoryLeakManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wanghonggit/WHMemoryLeakManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wanghonggit": "995406924@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/wanghonggit/WHMemoryLeakManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "WHMemoryLeakManager/Classes/**/*"
+}

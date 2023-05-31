@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		1A7DC7A2243F499BD9AD8502 /* Pods-WHMemoryLeakManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHMemoryLeakManager_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WHMemoryLeakManager_Tests/Pods-WHMemoryLeakManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C2EB31562FBEAD7FDBA99E9 /* Pods-WHMemoryLeakManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHMemoryLeakManager_Example.debug.xcconfig"; path = "Target Support Files/Pods-WHMemoryLeakManager_Example/Pods-WHMemoryLeakManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		227DD7136C0CEE0FB241BEC5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		227DD7136C0CEE0FB241BEC5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		45279CDCDF14CA6BD78CADDF /* Pods-WHMemoryLeakManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHMemoryLeakManager_Example.release.xcconfig"; path = "Target Support Files/Pods-WHMemoryLeakManager_Example/Pods-WHMemoryLeakManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WHMemoryLeakManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WHMemoryLeakManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,9 +61,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		79D90F167A46E871E6A4AA01 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		79D90F167A46E871E6A4AA01 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		87F6BA3122094BD92B8339D6 /* WHMemoryLeakManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WHMemoryLeakManager.podspec; path = ../WHMemoryLeakManager.podspec; sourceTree = "<group>"; };
+		87F6BA3122094BD92B8339D6 /* WHMemoryLeakManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WHMemoryLeakManager.podspec; path = ../WHMemoryLeakManager.podspec; sourceTree = "<group>"; };
 		97896AA32EC17F598CFC2DC3 /* Pods-WHMemoryLeakManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHMemoryLeakManager_Tests.release.xcconfig"; path = "Target Support Files/Pods-WHMemoryLeakManager_Tests/Pods-WHMemoryLeakManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B99974604A961124F3BC0090 /* Pods_WHMemoryLeakManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WHMemoryLeakManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E358915B3C2A1B1F368F83AB /* Pods_WHMemoryLeakManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WHMemoryLeakManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,6 @@
 				1A7DC7A2243F499BD9AD8502 /* Pods-WHMemoryLeakManager_Tests.debug.xcconfig */,
 				97896AA32EC17F598CFC2DC3 /* Pods-WHMemoryLeakManager_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,7 +247,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = wanghonggit;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = B4WZLV5NYQ;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = B4WZLV5NYQ;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -258,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,9 +498,11 @@
 			baseConfigurationReference = 1C2EB31562FBEAD7FDBA99E9 /* Pods-WHMemoryLeakManager_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B4WZLV5NYQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WHMemoryLeakManager/WHMemoryLeakManager-Prefix.pch";
 				INFOPLIST_FILE = "WHMemoryLeakManager/WHMemoryLeakManager-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,9 +516,11 @@
 			baseConfigurationReference = 45279CDCDF14CA6BD78CADDF /* Pods-WHMemoryLeakManager_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B4WZLV5NYQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WHMemoryLeakManager/WHMemoryLeakManager-Prefix.pch";
 				INFOPLIST_FILE = "WHMemoryLeakManager/WHMemoryLeakManager-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,6 +534,7 @@
 			baseConfigurationReference = 1A7DC7A2243F499BD9AD8502 /* Pods-WHMemoryLeakManager_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B4WZLV5NYQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -538,6 +547,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -551,6 +561,7 @@
 			baseConfigurationReference = 97896AA32EC17F598CFC2DC3 /* Pods-WHMemoryLeakManager_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B4WZLV5NYQ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -559,6 +570,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

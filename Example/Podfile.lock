@@ -1,0 +1,16 @@
+PODS:
+  - WHMemoryLeakManager (0.1.0)
+
+DEPENDENCIES:
+  - WHMemoryLeakManager (from `../`)
+
+EXTERNAL SOURCES:
+  WHMemoryLeakManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WHMemoryLeakManager: 3c2a00bb5a5cf8a9c668e999df9a10a37eec79dd
+
+PODFILE CHECKSUM: e64611c96d1770aca79391f2472a6f4344815942
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,6 @@
+framework module Pods_WHMemoryLeakManager_Example {
+  umbrella header "Pods-WHMemoryLeakManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
