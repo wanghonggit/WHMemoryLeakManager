@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WHMemoryLeakManager'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of WHMemoryLeakManager.'
 
 # This description is used to generate tags and improve search results.
@@ -40,6 +40,18 @@ TODO: Add long description of the pod here.
   ]
   s.framework = "Foundation", "CoreGraphics", "UIKit"
   s.library = 'c++'
+  s.subspec "fishhook" do |ss|
+      ss.source_files = "WHMemoryLeakManager/Classes/fishhook/**/*.{c,h}"
+  end
+  s.subspec "FBRetainCycleDetector" do |ss|
+      ss.source_files = "WHMemoryLeakManager/Classes/FBRetainCycleDetector/**/*.{h,m,mm}"
+  end
+  s.subspec "MLeaksFinder" do |ss|
+      ss.source_files = "WHMemoryLeakManager/Classes/MLeaksFinder/**/*.{h,m,mm}"
+  end
+  s.subspec "MRC" do |ss|
+      ss.source_files = "WHMemoryLeakManager/Classes/MRC/*"
+  end
   # s.resource_bundles = {
   #   'WHMemoryLeakManager' => ['WHMemoryLeakManager/Assets/*.png']
   # }
