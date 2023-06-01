@@ -23,7 +23,7 @@
 		2E3D7BE08E715698BEDF7F78C6BEFB2A /* FBBlockStrongLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD30072F877DFEDC66A0023745DFA86 /* FBBlockStrongLayout.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		33AEAFC1F3592F3F0C1B3DB271133F7B /* BaseType.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C754A652AB0B4DFB279E5F15AB0F2F2 /* BaseType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33C0077359BEE0E9F8770575ACA9D9DD /* UITouch+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = F50C2ABD4A8FDEBAA9DF5DF4D81801AA /* UITouch+MemoryLeak.m */; };
-		367F54D3E71402CCDDE4416CC922FFB2 /* MLeaksMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = A61AD17675EA3090FA3EE827C009EA09 /* MLeaksMessenger.m */; };
+		367F54D3E71402CCDDE4416CC922FFB2 /* MLeaksMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = A61AD17675EA3090FA3EE827C009EA09 /* MLeaksMessenger.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		36F863784DA05152CD52C99850A2E96F /* UIViewController+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EAADD420964003B75273B13F04A344 /* UIViewController+MemoryLeak.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		382520F590726EE128346E0081782DFC /* FBClassStrongLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B3EDF40711CE086FDE36D141156889 /* FBClassStrongLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B5D1A6FB82420A97A95C12F730D01C4 /* Pods-WHMemoryLeakManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC62EADF37CA36A59586FB920D4B273 /* Pods-WHMemoryLeakManager_Tests-dummy.m */; };
@@ -37,7 +37,7 @@
 		5EC4DFB64F35CF8BE80265DD745680C0 /* UIViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BBE7E1DC77FF8DD00B8F9C5829CFE6 /* UIViewController+MemoryLeak.m */; };
 		699A362DB5187CD7C28DE4AB1B3055FF /* UITabBarController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 374A8F03374E925504CBDD28561943AB /* UITabBarController+MemoryLeak.m */; };
 		6C298CC977B0388AD5E0AF9CDF00F66A /* FBObjectReference.h in Headers */ = {isa = PBXBuildFile; fileRef = AEB13DCD89552F7D3DF609530CBA9CF5 /* FBObjectReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6EDAB4731ECF787962FB8938748669CF /* MLeakedObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DB616A985F4879A8E16C8E117284D7 /* MLeakedObjectProxy.m */; };
+		6EDAB4731ECF787962FB8938748669CF /* MLeakedObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DB616A985F4879A8E16C8E117284D7 /* MLeakedObjectProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		7145AB82BC06A9DEC7FEA0228AEE3AEF /* FBBlockInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = B5761459A3DDA413DA2F2C31DEDED999 /* FBBlockInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		729122A3E658961D585FB17E1CF25913 /* Pods-WHMemoryLeakManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F818FF11A8F03DA26A9F007494339 /* Pods-WHMemoryLeakManager_Example-dummy.m */; };
 		76205859C7AD7963B901BC1C88BEC162 /* UIApplication+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F5F6E1A72946BC125130973761DE3C /* UIApplication+MemoryLeak.m */; };
@@ -69,7 +69,7 @@
 		C3D0B2B189797CCA79AD8E7D59796CDF /* FBStandardGraphEdgeFilters.h in Headers */ = {isa = PBXBuildFile; fileRef = DE6885646EAE74A50A7AE371B6805BB4 /* FBStandardGraphEdgeFilters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4443C2A412F59ABEDC48B924A1B9AFF /* UINavigationController+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A1F66238A60F0E22B19EE95E2B9FDF /* UINavigationController+MemoryLeak.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5DD0B10A642540BFB5AC06384FB7955 /* UIPageViewController+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AE42BE555F2B1C6DEE108AAC985386 /* UIPageViewController+MemoryLeak.m */; };
-		C904AA2232F898D1D5FFF04EA7966AE3 /* NSObject+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = CECA007A1500DCEC91AB942B84C30594 /* NSObject+MemoryLeak.m */; };
+		C904AA2232F898D1D5FFF04EA7966AE3 /* NSObject+MemoryLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = CECA007A1500DCEC91AB942B84C30594 /* NSObject+MemoryLeak.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C9B3448EE3F6D85F93D98DEB0DA57A39 /* FBIvarReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 234703606084A4876E040964E93EE03A /* FBIvarReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D7C67252B200911ADBA52940350735BB /* FBBlockStrongRelationDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 84262A71AAC051AC022CB1A88F9E345E /* FBBlockStrongRelationDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBFA1CE0501FA5095CD073150E57B492 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F3313FD9B8D587D23EB0BB69552CCAF /* fishhook.h */; settings = {ATTRIBUTES = (Public, ); }; };
