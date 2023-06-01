@@ -5,6 +5,24 @@
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
+class MyCode
+def recursionDirCreateSubSpace(path1,space)
+    ignore = ['.','..','.DS_Store']
+    Dir.foreach(path1) do |file|
+        # p file  # 打印所有的file，需要忽略掉你不需要的
+        if ignore.include?(file) && file.length > 0
+            next
+        end
+        tmpPath = "#{path1}/#{file}"
+        # p tmpPath # 打印合理的路径，检测是否有不合理的记得过滤
+        if File::ftype(tmpPath) == "directory"
+            space.subspec file do |tmpS|
+                tmpS.source_files = "#{tmpPath}/*"
+                recursionDirCreateSubSpace(tmpPath,tmpS)
+            end
+        end
+    end
+end
 
 Pod::Spec.new do |s|
   s.name             = 'WHMemoryLeakManager'
@@ -40,17 +58,8 @@ TODO: Add long description of the pod here.
   ]
   s.framework = "Foundation", "CoreGraphics", "UIKit"
   s.library = 'c++'
-  s.subspec "fishhook" do |ss|
-      ss.source_files = "WHMemoryLeakManager/Classes/fishhook/**/*.{c,h}"
-  end
-  s.subspec "FBRetainCycleDetector" do |ss|
-      ss.source_files = "WHMemoryLeakManager/Classes/FBRetainCycleDetector/**/*.{h,m,mm}"
-  end
-  s.subspec "MLeaksFinder" do |ss|
-      ss.source_files = "WHMemoryLeakManager/Classes/MLeaksFinder/**/*.{h,m,mm}"
-  end
-  s.subspec "MRC" do |ss|
-      ss.source_files = "WHMemoryLeakManager/Classes/MRC/*"
+  
+  MyCode.new.recursionDirCreateSubSpace("WHMemoryLeakManager/Classes",s)
   end
   # s.resource_bundles = {
   #   'WHMemoryLeakManager' => ['WHMemoryLeakManager/Assets/*.png']
