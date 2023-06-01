@@ -80,7 +80,6 @@
 		EAD5F67B01A4B8A6FBD14B120ADB5014 /* FBObjectiveCNSCFTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 336F1CE5D3472C67397F98EA83F3373A /* FBObjectiveCNSCFTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECE6B618C4BB9036709436A082D59008 /* FBObjectiveCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A80B6096F8B9E84850FC2F5DC677A142 /* FBObjectiveCObject.m */; };
 		F2B4E91873906E08DBF2EAF188788C2A /* UINavigationController+MemoryLeak.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1E489C87389BA54349B056D2F71151 /* UINavigationController+MemoryLeak.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9DFE9D02A28869500B8BBEF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DFE9CF2A28869500B8BBEF /* libc++.tbd */; };
 		FC218A8502A9DBF0E3FA88DBFBBF4296 /* FBBlockStrongLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D4E57B2E29ED5D13D1F9A31706F897D /* FBBlockStrongLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC6426F58BF121B50F1C2F10838BFEF3 /* FBAssociationManager+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B3E1E4363284F17A1BC4FAD23E630A92 /* FBAssociationManager+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD234510E86D627160F0B80934531D53 /* FBClassStrongLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BD838ED137B8B88D895DA66F97125653 /* FBClassStrongLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -203,6 +202,8 @@
 		F50D00128D24622196B1984E24FA2F57 /* WHMemoryLeakManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WHMemoryLeakManager.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F9A44F865C7528BFA4B305D1E00B302A /* FBObjectiveCGraphElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBObjectiveCGraphElement.h; sourceTree = "<group>"; };
 		F9DFE9CF2A28869500B8BBEF /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		F9DFE9D12A288A1300B8BBEF /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		F9DFE9D42A288B4900B8BBEF /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 		FC0CF338452D1DA26CDF582BB28D564F /* Pods-WHMemoryLeakManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WHMemoryLeakManager_Example-frameworks.sh"; sourceTree = "<group>"; };
 		FC6870F43F329CD0D85037FD42519930 /* FBObjectGraphConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBObjectGraphConfiguration.h; sourceTree = "<group>"; };
 		FD123D36D1275A45BBA7B03F211D3E89 /* FBObjectiveCObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FBObjectiveCObject.h; sourceTree = "<group>"; };
@@ -229,7 +230,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9DFE9D02A28869500B8BBEF /* libc++.tbd in Frameworks */,
 				DFAAE983D2A9FA9274D38118CAF77112 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +524,8 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9DFE9D42A288B4900B8BBEF /* libc.tbd */,
+				F9DFE9D12A288A1300B8BBEF /* libc++.1.tbd */,
 				F9DFE9CF2A28869500B8BBEF /* libc++.tbd */,
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);

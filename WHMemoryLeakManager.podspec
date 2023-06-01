@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WHMemoryLeakManager'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'A short description of WHMemoryLeakManager.'
 
 # This description is used to generate tags and improve search results.
@@ -38,8 +38,8 @@ TODO: Add long description of the pod here.
     'WHMemoryLeakManager/Classes/FBRetainCycleDetector/**/*.{h,m,mm}',
     'WHMemoryLeakManager/Classes/MLeaksFinder/**/*.{h,m,mm}'
   ]
-  
-#  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 arm64' }
+  s.framework = "Foundation", "CoreGraphics", "UIKit"
+  s.library = 'c++'
   # s.resource_bundles = {
   #   'WHMemoryLeakManager' => ['WHMemoryLeakManager/Assets/*.png']
   # }
