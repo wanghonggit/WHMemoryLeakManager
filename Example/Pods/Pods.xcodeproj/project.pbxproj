@@ -868,7 +868,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E174B96C4335B7D970A6E2539A6FA493 /* WHMemoryLeakManager.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1093,7 +1093,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CA3A624BA7BDA68573722598D9D7FAA /* WHMemoryLeakManager.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
