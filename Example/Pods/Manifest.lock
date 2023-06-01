@@ -1,5 +1,5 @@
 PODS:
-  - WHMemoryLeakManager (0.1.0)
+  - WHMemoryLeakManager (0.1.6)
 
 DEPENDENCIES:
   - WHMemoryLeakManager (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WHMemoryLeakManager: 3c2a00bb5a5cf8a9c668e999df9a10a37eec79dd
+  WHMemoryLeakManager: fc9f4554182b0986ec77f17b01ecdb4f4b3fcfca
 
 PODFILE CHECKSUM: e64611c96d1770aca79391f2472a6f4344815942
 

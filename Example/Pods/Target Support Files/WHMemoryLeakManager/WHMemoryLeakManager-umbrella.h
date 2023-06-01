@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "FBAssociationManager.h"
 #import "FBAssociationManager+Internal.h"
 #import "FBNodeEnumerator.h"
 #import "FBRetainCycleDetector+Internal.h"
@@ -24,10 +23,7 @@
 #import "FBObjectiveCGraphElement+Internal.h"
 #import "FBObjectiveCNSCFTimer.h"
 #import "FBBlockInterface.h"
-#import "FBBlockStrongLayout.h"
-#import "FBBlockStrongRelationDetector.h"
 #import "FBClassStrongLayout.h"
-#import "FBClassStrongLayoutHelpers.h"
 #import "BaseType.h"
 #import "FBStructEncodingParser.h"
 #import "Struct.h"
@@ -38,8 +34,6 @@
 #import "fishhook.h"
 #import "MLeakedObjectProxy.h"
 #import "MLeaksFinder.h"
-#import "MLeaksMessenger.h"
-#import "NSObject+MemoryLeak.h"
 #import "UIApplication+MemoryLeak.h"
 #import "UINavigationController+MemoryLeak.h"
 #import "UIPageViewController+MemoryLeak.h"
@@ -48,6 +42,12 @@
 #import "UITouch+MemoryLeak.h"
 #import "UIView+MemoryLeak.h"
 #import "UIViewController+MemoryLeak.h"
+#import "FBAssociationManager.h"
+#import "FBBlockStrongLayout.h"
+#import "FBBlockStrongRelationDetector.h"
+#import "FBClassStrongLayoutHelpers.h"
+#import "MLeaksMessenger.h"
+#import "NSObject+MemoryLeak.h"
 
 FOUNDATION_EXPORT double WHMemoryLeakManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char WHMemoryLeakManagerVersionString[];

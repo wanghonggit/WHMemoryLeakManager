@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WHMemoryLeakManager'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'A short description of WHMemoryLeakManager.'
 
 # This description is used to generate tags and improve search results.
@@ -31,27 +31,12 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'WHMemoryLeakManager/Classes/**/*'
-  
-  mrr_files = [
-        'FBRetainCycleDetector/Associations/FBAssociationManager.h',
-        'FBRetainCycleDetector/Associations/FBAssociationManager.mm',
-        'FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.h',
-        'FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.m',
-        'FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.h',
-        'FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.m',
-        'FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.h',
-        'FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.m',
-        'MLeaksFinder/NSObject+MemoryLeak.h',
-        'MLeaksFinder/NSObject+MemoryLeak.m',
-      ]
 
-    files = Pathname.glob("MLeaksFinder/**/*.{h,m,mm}")
-    files = files.map {|file| file.to_path}
-    files = files.reject {|file| mrr_files.include?(file)}
-
-    s.requires_arc = files.sort + [
-      'fishhook/**/*.{c,h}'
-    ]
+  s.requires_arc = [
+    'fishhook/**/*.{c,h}',
+    'FBRetainCycleDetector/**/*.{h,m,mm}',
+    'MLeaksFinder/**/*.{h,m,mm}'
+  ]
   
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 arm64' }
   
