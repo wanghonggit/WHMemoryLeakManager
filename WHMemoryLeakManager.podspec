@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WHMemoryLeakManager'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'A short description of WHMemoryLeakManager.'
 
 # This description is used to generate tags and improve search results.
@@ -46,7 +46,7 @@ TODO: Add long description of the pod here.
         
       ]
 
-    files = Pathname.glob("WHMemoryLeakManager/WHMemoryLeakManager/Classes/**/*.{h,m,mm}")
+    files = Pathname.glob("FBRetainCycleDetector/**/*.{h,m,mm}")
     files = files.map {|file| file.to_path}
     files = files.reject {|file| mrr_files.include?(file)}
 
