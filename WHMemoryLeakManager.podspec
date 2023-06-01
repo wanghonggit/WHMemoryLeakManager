@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WHMemoryLeakManager'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A short description of WHMemoryLeakManager.'
 
 # This description is used to generate tags and improve search results.
