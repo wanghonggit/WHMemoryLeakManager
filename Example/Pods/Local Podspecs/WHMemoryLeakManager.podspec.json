@@ -1,6 +1,6 @@
 {
   "name": "WHMemoryLeakManager",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "summary": "A short description of WHMemoryLeakManager.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/wanghonggit/WHMemoryLeakManager",
@@ -13,16 +13,16 @@
   },
   "source": {
     "git": "https://github.com/wanghonggit/WHMemoryLeakManager.git",
-    "tag": "0.1.6"
+    "tag": "0.1.7"
   },
   "platforms": {
     "ios": "11.0"
   },
   "source_files": "WHMemoryLeakManager/Classes/**/*",
   "requires_arc": [
-    "fishhook/**/*.{c,h}",
-    "FBRetainCycleDetector/**/*.{h,m,mm}",
-    "MLeaksFinder/**/*.{h,m,mm}"
+    "WHMemoryLeakManager/Classes/fishhook/**/*.{c,h}",
+    "WHMemoryLeakManager/Classes/FBRetainCycleDetector/**/*.{h,m,mm}",
+    "WHMemoryLeakManager/Classes/MLeaksFinder/**/*.{h,m,mm}"
   ],
   "pod_target_xcconfig": {
     "VALID_ARCHS": "x86_64 arm64"

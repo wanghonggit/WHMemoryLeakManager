@@ -34,6 +34,8 @@
 #import "fishhook.h"
 #import "MLeakedObjectProxy.h"
 #import "MLeaksFinder.h"
+#import "MLeaksMessenger.h"
+#import "NSObject+MemoryLeak.h"
 #import "UIApplication+MemoryLeak.h"
 #import "UINavigationController+MemoryLeak.h"
 #import "UIPageViewController+MemoryLeak.h"
@@ -46,8 +48,6 @@
 #import "FBBlockStrongLayout.h"
 #import "FBBlockStrongRelationDetector.h"
 #import "FBClassStrongLayoutHelpers.h"
-#import "MLeaksMessenger.h"
-#import "NSObject+MemoryLeak.h"
 
 FOUNDATION_EXPORT double WHMemoryLeakManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char WHMemoryLeakManagerVersionString[];
