@@ -7,7 +7,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#include <string>
+#import <string>
 
 namespace FB { namespace RetainCycleDetector { namespace Parser {
   class BaseType {

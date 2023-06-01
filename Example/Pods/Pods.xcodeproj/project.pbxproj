@@ -140,7 +140,7 @@
 		77EC7BF6492F84AB0174D94C9BA41D3B /* BaseType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaseType.h; sourceTree = "<group>"; };
 		7C2D52C9C26BB2CEA7543E11ED58CFF7 /* WHMemoryLeakManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WHMemoryLeakManager-Info.plist"; sourceTree = "<group>"; };
 		7C9F818FF11A8F03DA26A9F007494339 /* Pods-WHMemoryLeakManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WHMemoryLeakManager_Example-dummy.m"; sourceTree = "<group>"; };
-		7CED15D1B7BD80868340A9E831C5B338 /* WHMemoryLeakManager */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WHMemoryLeakManager; path = WHMemoryLeakManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CED15D1B7BD80868340A9E831C5B338 /* WHMemoryLeakManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WHMemoryLeakManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8210D13F6CE682D419AF02BB864AA1D3 /* UIPageViewController+MemoryLeak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIPageViewController+MemoryLeak.m"; sourceTree = "<group>"; };
 		85269E7B9A84DBAD35A8CB763729CACD /* Pods-WHMemoryLeakManager_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WHMemoryLeakManager_Tests"; path = Pods_WHMemoryLeakManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		853814342D6CAB338273EAF68E54523A /* FBNodeEnumerator.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; path = FBNodeEnumerator.mm; sourceTree = "<group>"; };
@@ -537,7 +537,7 @@
 			children = (
 				1F8A49FE5870A094A2300CA0B03010C4 /* Pods-WHMemoryLeakManager_Example */,
 				85269E7B9A84DBAD35A8CB763729CACD /* Pods-WHMemoryLeakManager_Tests */,
-				7CED15D1B7BD80868340A9E831C5B338 /* WHMemoryLeakManager */,
+				7CED15D1B7BD80868340A9E831C5B338 /* WHMemoryLeakManager.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -683,7 +683,7 @@
 			);
 			name = WHMemoryLeakManager;
 			productName = WHMemoryLeakManager;
-			productReference = 7CED15D1B7BD80868340A9E831C5B338 /* WHMemoryLeakManager */;
+			productReference = 7CED15D1B7BD80868340A9E831C5B338 /* WHMemoryLeakManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1011,6 +1011,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D778D8024AA87DB14D285508E213DF82 /* WHMemoryLeakManager.debug.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1108,6 +1109,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5AA78E0BA76E9747571A36499CD7B67C /* WHMemoryLeakManager.release.xcconfig */;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
