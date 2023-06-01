@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WHMemoryLeakManager'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'A short description of WHMemoryLeakManager.'
 
 # This description is used to generate tags and improve search results.
@@ -41,12 +41,11 @@ TODO: Add long description of the pod here.
         'FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.m',
         'FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.h',
         'FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.m',
-        'MLeaksFinder/MLeaksMessenger.h',
-        'MLeaksFinder/MLeaksMessenger.m',
-        
+        'MLeaksFinder/NSObject+MemoryLeak.h',
+        'MLeaksFinder/NSObject+MemoryLeak.m',
       ]
 
-    files = Pathname.glob("FBRetainCycleDetector/**/*.{h,m,mm}")
+    files = Pathname.glob("MLeaksFinder/**/*.{h,m,mm}")
     files = files.map {|file| file.to_path}
     files = files.reject {|file| mrr_files.include?(file)}
 
@@ -55,6 +54,7 @@ TODO: Add long description of the pod here.
     ]
   
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 arm64' }
+  
   # s.resource_bundles = {
   #   'WHMemoryLeakManager' => ['WHMemoryLeakManager/Assets/*.png']
   # }
