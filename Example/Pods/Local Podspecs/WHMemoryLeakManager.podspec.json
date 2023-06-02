@@ -1,6 +1,6 @@
 {
   "name": "WHMemoryLeakManager",
-  "version": "0.1.7",
+  "version": "0.1.1",
   "summary": "A short description of WHMemoryLeakManager.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/wanghonggit/WHMemoryLeakManager",
@@ -13,18 +13,57 @@
   },
   "source": {
     "git": "https://github.com/wanghonggit/WHMemoryLeakManager.git",
-    "tag": "0.1.7"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "11.0"
   },
   "source_files": "WHMemoryLeakManager/Classes/**/*",
-  "requires_arc": [
-    "WHMemoryLeakManager/Classes/fishhook/**/*.{c,h}",
-    "WHMemoryLeakManager/Classes/FBRetainCycleDetector/**/*.{h,m,mm}",
-    "WHMemoryLeakManager/Classes/MLeaksFinder/**/*.{h,m,mm}"
+  "exclude_files": [
+    "WHMemoryLeakManager/Classes/FBRetainCycleDetector/Associations/FBAssociationManager.{h,mm}",
+    "WHMemoryLeakManager/Classes/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.{h,m}",
+    "WHMemoryLeakManager/Classes/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.{h,m}",
+    "WHMemoryLeakManager/Classes/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.{h,m}"
   ],
-  "pod_target_xcconfig": {
-    "VALID_ARCHS": "x86_64 arm64"
-  }
+  "requires_arc": true,
+  "frameworks": [
+    "Foundation",
+    "CoreGraphics",
+    "UIKit"
+  ],
+  "libraries": "c++",
+  "subspecs": [
+    {
+      "name": "fishhook",
+      "source_files": "WHMemoryLeakManager/Classes/fishhook/**/*.{c,h}"
+    },
+    {
+      "name": "MRC",
+      "requires_arc": false,
+      "source_files": [
+        "WHMemoryLeakManager/Classes/FBRetainCycleDetector/Associations/FBAssociationManager.{h,mm}",
+        "WHMemoryLeakManager/Classes/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongLayout.{h,m}",
+        "WHMemoryLeakManager/Classes/FBRetainCycleDetector/Layout/Blocks/FBBlockStrongRelationDetector.{h,m}",
+        "WHMemoryLeakManager/Classes/FBRetainCycleDetector/Layout/Classes/FBClassStrongLayoutHelpers.{h,m}"
+      ]
+    },
+    {
+      "name": "FBRetainCycleDetector",
+      "source_files": "WHMemoryLeakManager/Classes/FBRetainCycleDetector/**/*.{h,m,mm}",
+      "dependencies": {
+        "WHMemoryLeakManager/fishhook": [
+
+        ]
+      }
+    },
+    {
+      "name": "MLeaksFinder",
+      "source_files": "WHMemoryLeakManager/Classes/MLeaksFinder/**/*.{h,m,mm}",
+      "dependencies": {
+        "WHMemoryLeakManager/FBRetainCycleDetector": [
+
+        ]
+      }
+    }
+  ]
 }
